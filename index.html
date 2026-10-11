@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,89 +6,701 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Blessing Masedi Developer Services builds websites, Android apps, online ordering systems and custom digital solutions.">
   <title>Blessing Masedi Developer Services</title>
+
   <style>
-    :root{--navy:#061426;--navy2:#0b1d33;--blue:#0789f9;--cyan:#37c5ff;--ink:#12223a;--muted:#63748b;--pale:#f3f8ff;--line:#dce8f5}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-    header{background:rgba(5,18,34,.97);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #1b3653}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;line-height:1.15}.logo{font-size:32px;color:var(--blue);font-weight:900;letter-spacing:-5px;margin-right:6px}.brand small{display:block;font-size:12px;font-weight:500;color:#c5d5e8;margin-top:4px}
-    nav{display:flex;gap:24px;align-items:center;font-size:14px}nav a:hover{color:var(--cyan)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:white;padding:12px 20px;border-radius:12px;font-weight:750;border:1px solid var(--blue);transition:.2s}
-    .btn:hover{background:#006fd0;transform:translateY(-1px)}.btn.outline{background:transparent;border-color:#56bfff}.btn.small{padding:10px 15px}
-    .hero{background:radial-gradient(circle at 82% 25%,#12385a 0,transparent 33%),linear-gradient(125deg,var(--navy),#0a2038);color:white;padding:78px 0 62px;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:44px}.eyebrow{color:var(--cyan);text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:850}
-    h1{font-size:clamp(36px,5vw,58px);line-height:1.08;letter-spacing:-1.7px;margin:15px 0 18px}h1 span{color:var(--blue)}.hero p{color:#d1dfef;max-width:610px;font-size:17px}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.visual{min-height:300px;border:1px solid #254868;border-radius:24px;background:linear-gradient(140deg,#0c2945,#061426);padding:26px;box-shadow:0 25px 70px #0004;position:relative}
-    .visual:before{content:"</>";font-size:64px;font-weight:900;color:var(--blue);display:block;margin:12px 0 20px}.visual h2{margin:0;font-size:26px}.visual p{font-size:14px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.chip{font-size:12px;border:1px solid #315779;border-radius:100px;padding:7px 11px;color:#d7e8fa}
-    .trust{background:#08182a;color:white;border-top:1px solid #1c3a58;padding:19px 0}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.trust-item{display:flex;gap:12px;align-items:center;font-size:14px}.trust-item b{display:block}.trust-item span{color:#a9c2da;font-size:12px}
-    section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 35px}.section-head h2{font-size:clamp(28px,4vw,38px);line-height:1.2;margin:8px 0}.section-head p{color:var(--muted);margin:0}
-    .services{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;padding:24px;background:white;box-shadow:0 8px 25px #0b37600a}.card:hover{border-color:#8acbff;box-shadow:0 12px 30px #0b376014}.icon{width:46px;height:46px;border-radius:14px;background:#e5f3ff;color:#007ce5;display:grid;place-items:center;font-size:23px;font-weight:800}.card h3{margin:17px 0 7px;font-size:19px}.card p{color:var(--muted);font-size:14px;min-height:48px;margin:0 0 18px}.price{font-size:23px;font-weight:850;color:var(--navy)}.price small{font-size:12px;color:var(--muted);font-weight:600}
-    .about{background:var(--pale)}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:center}.about-art{min-height:280px;border-radius:22px;background:linear-gradient(145deg,#061426,#0e3c65);display:grid;place-items:center;color:var(--blue);font-size:80px;font-weight:900;box-shadow:0 20px 40px #08223c20}.about h2{font-size:34px;line-height:1.2;margin:10px 0}.about p{color:var(--muted)}.skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.skills span{background:white;border:1px solid var(--line);border-radius:100px;padding:8px 12px;font-size:13px}
-    .contact{background:linear-gradient(120deg,#e8f5ff,#f8fbff)}.contact-box{display:flex;align-items:center;justify-content:space-between;gap:24px}.contact-box h2{margin:0;font-size:clamp(26px,4vw,36px)}.contact-box p{color:var(--muted);margin:8px 0 0}.email{font-weight:750;color:#006fcb;overflow-wrap:anywhere}
-    footer{background:var(--navy);color:white;padding:32px 0 18px}.footer-row{display:flex;justify-content:space-between;gap:24px;align-items:center;padding-bottom:22px;border-bottom:1px solid #1e3b58}.footer-note{font-size:12px;color:#9eb4ca;text-align:center;padding-top:17px}.footer-row p{margin:5px 0;color:#bdd0e2;font-size:13px}
-    @media(max-width:800px){nav{display:none}.hero{padding:55px 0}.hero-grid,.about-grid{grid-template-columns:1fr}.visual{min-height:230px}.trust-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}section{padding:58px 0}.about-art{min-height:190px}.contact-box{align-items:flex-start;flex-direction:column}.footer-row{align-items:flex-start;flex-direction:column}}
-    @media(max-width:520px){.cards{grid-template-columns:1fr}.card p{min-height:0}.nav{min-height:68px}.brand{font-size:14px}.hero p{font-size:15px}.actions .btn{width:100%}.visual{padding:22px}}
+    :root {
+      --navy: #061426;
+      --navy2: #0b1d33;
+      --blue: #0789f9;
+      --cyan: #37c5ff;
+      --ink: #12223a;
+      --muted: #63748b;
+      --pale: #f3f8ff;
+      --line: #dce8f5;
+      --whatsapp: #25D366;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    header {
+      background: rgba(5,18,34,.97);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid #1b3653;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 76px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+
+    .logo {
+      font-size: 32px;
+      color: var(--blue);
+      font-weight: 900;
+      letter-spacing: -5px;
+      margin-right: 6px;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 12px;
+      font-weight: 500;
+      color: #c5d5e8;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: var(--cyan); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--blue);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: 750;
+      border: 1px solid var(--blue);
+      transition: .2s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      filter: brightness(.92);
+      transform: translateY(-1px);
+    }
+
+    .btn.outline {
+      background: transparent;
+      border-color: #56bfff;
+    }
+
+    .btn.small { padding: 10px 15px; }
+
+    .btn.whatsapp {
+      background: var(--whatsapp);
+      border-color: var(--whatsapp);
+      color: #062c15;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 82% 25%, #12385a 0, transparent 33%),
+        linear-gradient(125deg, var(--navy), #0a2038);
+      color: white;
+      padding: 78px 0 62px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      align-items: center;
+      gap: 44px;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.08;
+      letter-spacing: -1.7px;
+      margin: 15px 0 18px;
+    }
+
+    h1 span { color: var(--blue); }
+
+    .hero p {
+      color: #d1dfef;
+      max-width: 610px;
+      font-size: 17px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .visual {
+      min-height: 300px;
+      border: 1px solid #254868;
+      border-radius: 24px;
+      background: linear-gradient(140deg, #0c2945, #061426);
+      padding: 26px;
+      box-shadow: 0 25px 70px #0004;
+      position: relative;
+    }
+
+    .visual:before {
+      content: "</>";
+      font-size: 64px;
+      font-weight: 900;
+      color: var(--blue);
+      display: block;
+      margin: 12px 0 20px;
+    }
+
+    .visual h2 { margin: 0; font-size: 26px; }
+
+    .visual p { font-size: 14px; }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .chip {
+      font-size: 12px;
+      border: 1px solid #315779;
+      border-radius: 100px;
+      padding: 7px 11px;
+      color: #d7e8fa;
+    }
+
+    .trust {
+      background: #08182a;
+      color: white;
+      border-top: 1px solid #1c3a58;
+      padding: 19px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .trust-item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .trust-item b { display: block; }
+
+    .trust-item span {
+      color: #a9c2da;
+      font-size: 12px;
+    }
+
+    section { padding: 76px 0; }
+
+    .section-head {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 35px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+      margin: 8px 0;
+    }
+
+    .section-head p { color: var(--muted); margin: 0; }
+
+    .services { background: #fff; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px;
+      background: white;
+      box-shadow: 0 8px 25px #0b37600a;
+    }
+
+    .card:hover {
+      border-color: #8acbff;
+      box-shadow: 0 12px 30px #0b376014;
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      background: #e5f3ff;
+      color: #007ce5;
+      display: grid;
+      place-items: center;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .card h3 { margin: 17px 0 7px; font-size: 19px; }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      min-height: 48px;
+      margin: 0 0 18px;
+    }
+
+    .price {
+      font-size: 23px;
+      font-weight: 850;
+      color: var(--navy);
+    }
+
+    .price small {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .about { background: var(--pale); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-art {
+      min-height: 280px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #061426, #0e3c65);
+      display: grid;
+      place-items: center;
+      color: var(--blue);
+      font-size: 80px;
+      font-weight: 900;
+      box-shadow: 0 20px 40px #08223c20;
+    }
+
+    .about h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin: 10px 0;
+    }
+
+    .about p { color: var(--muted); }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 20px;
+    }
+
+    .skills span {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 100px;
+      padding: 8px 12px;
+      font-size: 13px;
+    }
+
+    .contact {
+      background: linear-gradient(120deg, #e8f5ff, #f8fbff);
+    }
+
+    .contact-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .contact-box h2 {
+      margin: 0;
+      font-size: clamp(26px, 4vw, 36px);
+    }
+
+    .contact-box p { color: var(--muted); margin: 8px 0 0; }
+
+    .email {
+      font-weight: 750;
+      color: #006fcb;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: white;
+      padding: 32px 0 18px;
+    }
+
+    .footer-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      padding-bottom: 22px;
+      border-bottom: 1px solid #1e3b58;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: #9eb4ca;
+      text-align: center;
+      padding-top: 17px;
+    }
+
+    .footer-row p {
+      margin: 5px 0;
+      color: #bdd0e2;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+      nav { display: none; }
+
+      .hero { padding: 55px 0; }
+
+      .hero-grid, .about-grid { grid-template-columns: 1fr; }
+
+      .visual { min-height: 230px; }
+
+      .trust-grid { grid-template-columns: 1fr; }
+
+      .cards { grid-template-columns: repeat(2, 1fr); }
+
+      section { padding: 58px 0; }
+
+      .about-art { min-height: 190px; }
+
+      .contact-box {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-row {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .cards { grid-template-columns: 1fr; }
+
+      .card p { min-height: 0; }
+
+      .nav { min-height: 68px; }
+
+      .brand { font-size: 14px; }
+
+      .hero p { font-size: 15px; }
+
+      .actions .btn { width: 100%; }
+
+      .visual { padding: 22px; }
+
+      .contact-actions { width: 100%; }
+
+      .contact-actions .btn { width: 100%; }
+    }
   </style>
 </head>
+
 <body>
+
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#home"><span class="logo">&lt;/&gt;</span><span>Blessing Masedi<small>Developer Services</small></span></a>
-    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="brand" href="#home">
+      <span class="logo">&lt;/&gt;</span>
+      <span>Blessing Masedi<small>Developer Services</small></span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <a class="btn small" href="#contact">Get a Quote</a>
   </div>
 </header>
+
 <main>
+
   <section class="hero" id="home">
     <div class="wrap hero-grid">
+
       <div>
         <div class="eyebrow">Turning ideas into digital solutions</div>
+
         <h1>Build your future with <span>digital solutions.</span></h1>
-        <p>I create modern websites, Android apps and custom digital solutions to help businesses, schools and individuals establish their online presence.</p>
-        <div class="actions"><a class="btn" href="#services">Explore Services →</a><a class="btn outline" href="#contact">Contact Me</a></div>
+
+        <p>
+          I create modern websites, Android apps and custom digital solutions
+          to help businesses, schools and individuals establish their online presence.
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="#services">Explore Services →</a>
+          <a class="btn outline" href="#contact">Contact Me</a>
+          <a class="btn whatsapp"
+             href="https://wa.me/27716967874?text=Hello%20Blessing%20Masedi%20Developer%20Services!%20I%27d%20like%20more%20information%20about%20your%20services%20and%20prices."
+             target="_blank" rel="noopener">
+            Chat on WhatsApp
+          </a>
+        </div>
       </div>
+
       <div class="visual" aria-label="Digital development illustration">
         <h2>Ideas. Code. Growth.</h2>
         <p>Practical digital tools built around your goals and your budget.</p>
-        <div class="chips"><span class="chip">Websites</span><span class="chip">Android apps</span><span class="chip">Online systems</span><span class="chip">AI assistants</span></div>
+
+        <div class="chips">
+          <span class="chip">Websites</span>
+          <span class="chip">Android apps</span>
+          <span class="chip">Online systems</span>
+          <span class="chip">AI assistants</span>
+        </div>
       </div>
+
     </div>
   </section>
-  <div class="trust"><div class="wrap trust-grid">
-    <div class="trust-item"><span>◆</span><div><b>Affordable starting prices</b><span>Clear prices to help you plan</span></div></div>
-    <div class="trust-item"><span>⌘</span><div><b>Built for your needs</b><span>Solutions shaped around your idea</span></div></div>
-    <div class="trust-item"><span>✓</span><div><b>Support and communication</b><span>Discuss scope and progress</span></div></div>
-  </div></div>
+
+  <div class="trust">
+    <div class="wrap trust-grid">
+      <div class="trust-item">
+        <span>◆</span>
+        <div>
+          <b>Affordable starting prices</b>
+          <span>Clear prices to help you plan</span>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>⌘</span>
+        <div>
+          <b>Built for your needs</b>
+          <span>Solutions shaped around your idea</span>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✓</span>
+        <div>
+          <b>Support and communication</b>
+          <span>Discuss scope and progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section class="services" id="services">
     <div class="wrap">
-      <div class="section-head"><div class="eyebrow">Our services</div><h2>What I Offer</h2><p>From a simple online presence to custom applications, let's find the right solution for your project.</p></div>
-      <div class="cards">
-        <article class="card"><div class="icon">⌘</div><h3>Basic Website</h3><p>A clean, mobile-friendly website for a personal project, portfolio or small business.</p><div class="price">From R800</div></article>
-        <article class="card"><div class="icon">▦</div><h3>Business Website</h3><p>A professional business website with service details, contact information and clear calls to action.</p><div class="price">From R1,500</div></article>
-        <article class="card"><div class="icon">▣</div><h3>Android App</h3><p>A custom Android app designed around your idea, business or service.</p><div class="price">From R3,000</div></article>
-        <article class="card"><div class="icon">⌘</div><h3>App + Backend</h3><p>An app connected to server-side features, APIs and a database where required.</p><div class="price">From R8,000</div></article>
-        <article class="card"><div class="icon">🛒</div><h3>Online Ordering Website</h3><p>Let customers browse products or meals and submit orders online. Integrations depend on scope.</p><div class="price">Request a quote</div></article>
-        <article class="card"><div class="icon">✳</div><h3>AI Robot / Chatbot</h3><p>A custom chatbot or AI assistant concept for customer questions and business workflows.</p><div class="price">From R10,000</div></article>
-    
-    
-<p><strong>WhatsApp:</strong> 071 696 7874</p>
-<a class="btn" style="background:#25D366;border-color:#25D366" href="https://wa.me/27716967874?text=Hello%20Blessing%20Masedi%20Developer%20Services" target="_blank" rel="noopener">Chat on WhatsApp →</a>
-  
-      
+
+      <div class="section-head">
+        <div class="eyebrow">Our services</div>
+        <h2>What I Offer</h2>
+        <p>
+          From a simple online presence to custom applications,
+          let's find the right solution for your project.
+        </p>
       </div>
-   </div>
-  </section>
-  <section class="about" id="about">
-    <div class="wrap about-grid">
-      <div class="about-art">&lt;/&gt;</div>
-      <div><div class="eyebrow">About the developer</div><h2>Hello, I'm Blessing Masedi.</h2><p>I help turn ideas into useful digital experiences, from business websites to Android applications. I focus on clear communication, practical solutions and building around each client's needs.</p><p>Every project starts with a conversation about your goals, features, timeline and budget. Final pricing depends on the agreed scope.</p><div class="skills"><span>Web development</span><span>Android apps</span><span>Responsive design</span><span>Digital solutions</span></div></div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="icon">⌘</div>
+          <h3>Basic Website</h3>
+          <p>A clean, mobile-friendly website for a personal project, portfolio or small business.</p>
+          <div class="price">From R800</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">▦</div>
+          <h3>Business Website</h3>
+          <p>A professional business website with service details, contact information and clear calls to action.</p>
+          <div class="price">From R1,500</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">▣</div>
+          <h3>Android App</h3>
+          <p>A custom Android app designed around your idea, business or service.</p>
+          <div class="price">From R3,000</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">⌘</div>
+          <h3>App + Backend</h3>
+          <p>An app connected to server-side features, APIs and a database where required.</p>
+          <div class="price">From R8,000</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">🛒</div>
+          <h3>Online Ordering Website</h3>
+          <p>Let customers browse products or meals and submit orders online. Integrations depend on scope.</p>
+          <div class="price">Request a quote</div>
+        </article>
+
+        <article class="card">
+          <div class="icon">✳</div>
+          <h3>AI Robot / Chatbot</h3>
+          <p>A custom chatbot or AI assistant concept for customer questions and business workflows.</p>
+          <div class="price">From R10,000</div>
+        </article>
+
+      </div>
     </div>
   </section>
-  <section class="contact" id="contact">
-    <div class="wrap contact-box"><div><div class="eyebrow">Get in touch</div><h2>Let's build something great.</h2><p>Have a project in mind? Email me to discuss your idea and request a quote.</p><p class="email">blessingmasedi7@gmail.com</p></div><a class="btn" href="mailto:blessingmasedi7@gmail.com?subject=Project%20enquiry%20-%20Blessing%20Masedi%20Developer%20Services">Email Me →</a></div>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+
+      <div class="about-art">&lt;/&gt;</div>
+
+      <div>
+        <div class="eyebrow">About the developer</div>
+        <h2>Hello, I'm Blessing Masedi.</h2>
+
+        <p>
+          I help turn ideas into useful digital experiences, from business
+          websites to Android applications. I focus on clear communication,
+          practical solutions and building around each client's needs.
+        </p>
+
+        <p>
+          Every project starts with a conversation about your goals, features,
+          timeline and budget. Final pricing depends on the agreed scope.
+        </p>
+
+        <div class="skills">
+          <span>Web development</span>
+          <span>Android apps</span>
+          <span>Responsive design</span>
+          <span>Digital solutions</span>
+        </div>
+      </div>
+
+    </div>
   </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-box">
+
+      <div>
+        <div class="eyebrow">Get in touch</div>
+        <h2>Let's build something great.</h2>
+
+        <p>
+          Have a project in mind? Email or WhatsApp me to discuss
+          your idea and request a quote.
+        </p>
+
+        <p class="email">blessingmasedi7@gmail.com</p>
+
+        <p><strong>WhatsApp:</strong> 071 696 7874</p>
+      </div>
+
+      <div class="contact-actions">
+        <a class="btn"
+           href="mailto:blessingmasedi7@gmail.com?subject=Project%20enquiry%20-%20Blessing%20Masedi%20Developer%20Services">
+          Email Me →
+        </a>
+
+        <a class="btn whatsapp"
+           href="https://wa.me/27716967874?text=Hello%20Blessing%20Masedi%20Developer%20Services!%20I%27d%20like%20more%20information%20about%20your%20services%20and%20prices."
+           target="_blank" rel="noopener">
+          Chat on WhatsApp →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
 </main>
-<footer><div class="wrap"><div class="footer-row"><a class="brand" href="#home"><span class="logo">&lt;/&gt;</span><span>Blessing Masedi<small>Developer Services</small></span></a><div><b>Contact</b><p><a href="mailto:blessingmasedi7@gmail.com">blessingmasedi7@gmail.com</a></p><p>South Africa</p></div></div><div class="footer-note">© <span id="year">2026</span> Blessing Masedi Developer Services. All rights reserved.</div></div></footer>
+
+<footer>
+  <div class="wrap">
+
+    <div class="footer-row">
+      <a class="brand" href="#home">
+        <span class="logo">&lt;/&gt;</span>
+        <span>Blessing Masedi<small>Developer Services</small></span>
+      </a>
+
+      <div>
+        <b>Contact</b>
+        <p>
+          <a href="mailto:blessingmasedi7@gmail.com">
+            blessingmasedi7@gmail.com
+          </a>
+        </p>
+        <p>
+          WhatsApp:
+          <a href="https://wa.me/27716967874" target="_blank" rel="noopener">
+            071 696 7874
+          </a>
+        </p>
+        <p>South Africa</p>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      © 2026 Blessing Masedi Developer Services. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
 </body>
-</html>
+  </html>
+  
